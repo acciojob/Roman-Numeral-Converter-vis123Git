@@ -9,6 +9,7 @@ function convertToRoman(num) {
       'I' : 1
     };
 
+	let roman = ""
   for ( i in obj ) {
     while ( num >= obj[i] ) {
       roman += i;
@@ -18,9 +19,6 @@ function convertToRoman(num) {
   return roman;
 }
 
-console.log(convertToRoman(36));
+console.log(convertToRoman(11));
 
 
-
-
-module.exports = convertToRoman
